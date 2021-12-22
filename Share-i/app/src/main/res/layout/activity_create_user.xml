@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".CreateUser">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimg"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:onClick="profileImgUpdate"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/material_500"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_500"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/avatarbox"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/avatarbox"
+        android:onClick="profileImgUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="64dp"
+            android:onClick="profileImgUpdate"
+            android:src="@drawable/avatar2"
+            app:civ_border_color="@color/avatarbox"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="52dp"
+            android:onClick="profileImgUpdate"
+            android:src="@drawable/avatar4"
+            app:civ_border_color="@color/avatarbox"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/avatar2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="56dp"
+            android:onClick="profileImgUpdate"
+            android:src="@drawable/avatar6"
+            app:civ_border_color="@color/avatarbox"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toEndOf="@+id/avatar2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/Enterbtn"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/createUsrBtn"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatarbox"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/createLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4sp"
+        android:text="@string/createUsrLogin"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Enterbtn"
+        app:layout_constraintVertical_bias="0.119" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

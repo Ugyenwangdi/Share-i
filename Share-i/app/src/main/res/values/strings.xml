@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Share-i</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="enable_p2p_button">P2P On/Off</string>
+
+    <string name="discover_peers_button">Discover</string>
+
+    <string name="connect_peer_button">Connect</string>
+
+    <string name="disconnect_peer_button">Disconnect</string>
+
+    <string name="get_file_button">Launch Gallery</string>
+
+    <string name="empty" />
+
+    <string name="yes">yes</string>
+
+    <string name="no">no</string>
+
+    <string name="client_text">This device will act as a client. Click on Launch Gallery button to pick an image from local storage</string>
+
+    <string name="empty_message">No devices found. Turn on WiFi and Click on WiFi Discover.</string>
+
+    <string name="p2p_off_warning">Enable P2P from button above or system settings</string>
+
+    <string name="group_owner_text">"Am I the Group Owner? "</string>
+
+    <string name="label_me">My Device</string>
+
+    <string name="label_peers">PEERS</string>
+
+    <string name="menuProfile">menuProfile</string>
+    <string name="applink">info@sharei.com</string>
+    <string name="hint">Username</string>
+    <string name="createUsrBtn">Register</string>
+    <string name="username">Username</string>
+    <string name="update_profile">Update</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="app_description">Share-i app is a WiFi Peer-to-Peer application which helps to share a photo among connected android devices. Wi-Fi Direct (P2P) allows devices with the appropriate hardware to connect directly to each other via Wi-Fi without an intermediate access point. Using these APIs, we can discover and connect to other devices when each device supports Wi-Fi P2P, then communicate over a speedy connection across distances much longer than a Bluetooth connection. <br></br><br></br><b>\n\nObjectives:</b><br></br>\n1. Help transfer an image from one mobile device to another. In this android app, image from one device can be shared to the other device who is receiving by establishing a connection over a WiFi and the receiver can get the image shared.
+<br></br>\n2. Help nearby devices to easily transfer an image without internet connection.
+The application will be using a WiFi communication range to connect the nearby mobiles
+present within the operating range.<br></br><br></br>\n\n <b>Email: </b>12190105.gcit@rub.edu.bt</string>
+    <string name="feedback_hin">Type your feedback here</string>
+    <string name="Login">Login </string>
+    <string name="Reglogin">Create Account</string>
+    <string name="createUsrLogin">Login\?</string>
+</resources>
